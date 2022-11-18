@@ -1,0 +1,209 @@
+.form {
+    position: fixed;
+    top:10vh;
+    left: 20vw;
+    transform: scaleY(0.95);
+    max-height: 100%;
+    overflow: scroll;
+}
+.form2 {
+    position: fixed;
+    top:10vh;
+    left: 20vw;
+    transform: scaleY(01);
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px;
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 10px;
+    width: 20vw;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.exit {
+    /* top:10vh;
+    left: 30vw; */
+    position: relative;
+    left: 17vw;
+    height: 2.5vh;
+    width: 2.5vh;
+
+}
+.exit :hover {
+    cursor: pointer;
+}
+  
+  .form {
+    background-color: #EFEFEF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px;
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 10px;
+    width: 20vw;
+  }
+  
+  .title {
+    color: #100000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    color: #100000;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .input_container_ic1 {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .input_container_ic2 {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #FFFFFA;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 20px;
+    left: 0.5vw;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 18vw;
+  }
+  
+  .cut_short {
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 20px;
+    left: 0.5vw;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 18vw;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+    
+  }
+  .input:focus ~ .cut_short,
+  .input:not(:placeholder-shown) ~ .cut_short {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    opacity: 0;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+    width: 18vw;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(0px) scale(0.75);
+    width: 24vw;
+    text-align: center;
+    left: 0px;
+    opacity: 100;
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #EFEFEF;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #F21137;
+    font-weight: 500;
+  }
+  
+  .submit {
+    background-color: #F21137;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #b90000;
+  }
+  
+
+  @media screen and (max-width:700px) {
+    .form {
+      position: fixed;
+      top:5vh;
+      left: 15vw;
+      transform: scaleY(0.95);
+      width: 70vw;
+  }
+  .form2 {
+      position: fixed;
+      top:10vh;
+      left: 15vw;
+      transform: scaleY(01);
+      background-color: #EFEFEF;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px;
+      box-sizing: border-box;
+      height: fit-content;
+      padding: 10px;
+      width: 70vw;
+  }
+  .exit {
+    left: 1vw;
+
+}
+}

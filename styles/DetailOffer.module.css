@@ -1,0 +1,110 @@
+.offer_card{
+    box-shadow: 0px 0px 3px;
+    margin: 1.5%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 30;
+    background-color: #FFFFFA;
+    width: 80vw;
+    
+}
+.head{
+    box-shadow: 0 8px 8px -4px #f21137;
+    padding-bottom: 10px;
+    
+}
+.head ul{
+    padding-left: 10px;
+    list-style: none;
+}
+.sub_head{
+    
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 8px 8px -4px #f21137;
+
+}
+.sub_head_content{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub_head_content div{
+    width: 40%;
+    margin: 2px;
+}
+.sub_head li{
+   margin: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f21137;
+   color: white;
+   border-radius: 5px;
+}
+.sub_head li span{
+   margin: 0 3px;
+ }
+.body{
+    width: 100%;
+    max-height: 400px;
+    overflow: scroll;
+    padding: 20px 10px;
+}
+.button_container{
+    margin: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.button_container button{
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: #f21137;
+    color: white;
+    font-weight: bold;
+
+}
+.button_container button:hover{
+    cursor: pointer;
+
+}
+.btn_close_container{
+    display: flex;
+    justify-content: flex-end;
+}
+.close_btn{
+    
+    visibility: visible;
+    padding-top: 10px;
+    animation: show_button 1s 1s forwards;
+}
+.close_btn:hover{
+    cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+    .offer_card{
+        position: sticky;
+        top: 18vh;
+        max-height: 69vh;
+        overflow: scroll;
+        max-width: 37vw;
+        /* margin: 70px 10px 100px 10px; */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .offer_card{
+        overflow: scroll;
+        max-height: 80%;
+        top: 10vh;
+        left: 10vw;
+    }
+}

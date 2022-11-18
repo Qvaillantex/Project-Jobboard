@@ -1,0 +1,76 @@
+.searchbar {
+    margin: 15px;
+    max-width: 100vw;
+}
+
+.formContainer {
+    display: flex;
+    justify-content:space-between;
+    height: fit-content;
+}
+
+  .form {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid #100000;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+  }
+  
+  .form::before, .btn::after {
+    position: absolute;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .form::before {
+    height: 50px;
+    width: 50vw;
+  }
+  
+  .form::after {
+    width: 50vw;
+    height: 30px;
+  }
+  
+  .noselect {
+    width: 49vw;
+    font-size: calc(15px + 1vw);
+        flex-grow: 1;
+
+  }
+  .noselect2 {
+    width:49vw;
+    font-size: calc(15px + 1vw);
+    flex-grow: 1;
+  }
+  
+  .form:hover::before {
+    width: 0px;
+    background: #fff;
+    cursor:text;
+  }
+  
+  .form:hover::after {
+    height: 0px;
+    background: #fff;
+    cursor:text;
+  }
+  
+  .form:hover {
+    background: #fff;
+    border: 3px solid #F21137;
+    cursor:text;
+  }
+
+  .research {
+display: none;
+  }

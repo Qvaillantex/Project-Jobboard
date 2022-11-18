@@ -1,0 +1,12 @@
+.company_card_container{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 2vh;
+    z-index: 5;
+    left: 10vw;
+    width: 80vw;
+    justify-content: space-between;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+}

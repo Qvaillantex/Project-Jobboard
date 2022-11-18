@@ -1,0 +1,53 @@
+
+.header{
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.sub_header{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100vw;
+    box-shadow: 0px 0px 5px;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   
+}
+.sub_header li{
+    margin: 15px;
+}
+.body{
+    /* display: flex; */
+    justify-content: center;
+    margin: 10px 0;
+}
+.shadow{
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    padding: 5px;
+}
+.part_1{
+    margin-right:10px;
+    width: 70%;
+   
+}
+
+
+.offer  {
+    position: relative;
+    top: 0;
+    justify-content: center;
+}
+.aboutus {
+    position: relative;
+    left: 10vw;
+}

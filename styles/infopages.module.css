@@ -1,0 +1,48 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+@media screen and (max-width:980px) {
+.sommaire {
+    display: none;
+}
+}
+
+.sommaire {
+    flex: 20%;
+}
+
+.barresommaire {
+    position: fixed;
+    border-top: 5px solid #F21137;
+    padding: 15px;
+    padding-top: 5px;
+    border-radius: 1px;
+    top: 8%;
+    font-size: calc(12px + 0.5vw);
+}
+
+.sommaireLink  {
+    border-top: 2px solid #100000;
+}
+.sommaireLink:hover {
+    color: #F21137;
+
+}
+
+
+.text {
+    flex: 70%;
+    margin: 10px;
+
+}
+
+.paragraph {
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 0px 10px 10px 10px;
+    font-size: calc(6px + 0.6vw);
+}

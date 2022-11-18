@@ -1,0 +1,50 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    background: black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 10px;
+    z-index: 30;
+  }
+  .fixedfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    background: black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 10px;
+    z-index: 30;
+  }
+  
+  .footerup {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .reseaux {
+    margin: 5px;
+  }
+  
+  .footerbottom {
+    flex: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(8px + 0.5vw);
+
+  } 
+  
+  .a {
+    flex: 15%;
+    width: fit-content;
+    padding: 15;
+  
+  }
